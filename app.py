@@ -25,7 +25,7 @@ def predict(inp):
 
 title = "Pneumonia Chest X-Ray Classifier"
 
-desc = "This is a ConvNext trained for the Pneumonia Chest X-Ray dataset. It can help to determine whether the patient has pneumonia or not through passing in a Chest X-Ray Image. The first 3 example images are of patients without pneumonia, while patients in the last 3 example images were diagnosed with pneumonia"
+desc = "This is a ConvNext trained for the Pneumonia Chest X-Ray dataset. It can help to determine whether the patient has pneumonia or not through passing in a Chest X-Ray Image .The example images provided are all taken from the unseen test set. The first 3 images are from patients without pneumonia, while the last 3 images were from patients diagnosed with pneumonia"
 
 long_desc = "This is a ConvNext trained for the Pneumonia Chest X-Ray dataset (https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) achieving 97% accuracy on the test set. The dataset contains a total of 5,856 chest X-ray images from children patients in the Guangzhou Women and Children’s Medical Center. We retain the original training and testing split that the authors used. Thus, 5,232 of the images were used for training and 624 images were used for testing. 3,883 of the training images contain examples with pneumonia present and the remaining 1,349 training chest X-ray images have been determined to be free of Pneumonia"
 
