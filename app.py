@@ -16,10 +16,10 @@ transforms = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor(),
 ])
 
-def predict(inp):
-    inp = transforms(inp).unsqueeze(0)
+def predict(input):
+    input = transforms(input).unsqueeze(0)
     with torch.no_grad():
-        prediction = torch.nn.functional.softmax(model(inp)['logits'][0, 0:2], dim=0)
+        prediction = torch.nn.functional.softmax(model(input)['logits'][0, 0:2], dim=0)
         confidences = {labels[i]: float(prediction[i]) for i in range(2)}
     return confidences
 
